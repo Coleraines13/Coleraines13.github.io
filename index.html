@@ -17,31 +17,23 @@
     <!-- Clickable Square Images Grid -->
     <a-entity position="-3 1 -5" rotation="0 45 0">
       <!-- Front Left Square -->
-      <a-entity position="-1 0 -1">
-        <a-link href="https://example.com/image_1_page">
-          <a-image src="link_to_image_1.jpg" width="2" height="2"></a-image>
-        </a-link>
+      <a-entity position="-5 0 -1">
+        <a-image src="https://cdn.glitch.global/35232277-a514-434a-a0ef-e8cefabc3b4f/LinkedIn_logo_initials.webp?v=1712943171835" width="2" height="2" onclick="openLink('www.linkedin.com/in/cole-raines')"></a-image>
       </a-entity>
 
       <!-- Front Right Square -->
-      <a-entity position="1 0 -1">
-        <a-link href="https://example.com/image_2_page">
-          <a-image src="link_to_image_2.jpg" width="2" height="2"></a-image>
-        </a-link>
+      <a-entity position="5 0 -1">
+        <a-image src="https://cdn.glitch.global/35232277-a514-434a-a0ef-e8cefabc3b4f/github-icon-for-resume-1.webp?v=1712944282597" width="2" height="2" onclick="openLink('https://github.com/Coleraines13')"></a-image>
       </a-entity>
 
       <!-- Back Left Square -->
-      <a-entity position="-1 2 -1">
-        <a-link href="https://example.com/image_3_page">
-          <a-image src="link_to_image_3.jpg" width="2" height="2"></a-image>
-        </a-link>
+      <a-entity position="-2 0 -1">
+        <a-image src="https://cdn.glitch.global/35232277-a514-434a-a0ef-e8cefabc3b4f/Gmail_Logo_128px.webp?v=1712944333578" width="2" height="2" onclick="openLink('https://Colegraines@outlook.com')"></a-image>
       </a-entity>
 
       <!-- Back Right Square -->
-      <a-entity position="1 2 -1">
-        <a-link href="https://example.com/image_4_page">
-          <a-image src="link_to_image_4.jpg" width="2" height="2"></a-image>
-        </a-link>
+      <a-entity position="2 0 -1">
+        <a-image src="https://cdn.glitch.global/35232277-a514-434a-a0ef-e8cefabc3b4f/580b57fcd9996e24bc43c53e.webp?v=1712944904817" width="2" height="2" onclick="openLink('https://twitter.com/NttReaper')"></a-image>
       </a-entity>
     </a-entity>
 
@@ -52,5 +44,12 @@
     <!-- Camera -->
     <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
   </a-scene>
+
+  <script>
+    // Function to open the link in a new tab
+    function openLink(url) {
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
-</html>w
+</html>
