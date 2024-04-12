@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A-Frame Scene</title>
+  <title>A-Frame Scene with Clickable Square Images</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 </head>
 <body>
@@ -14,14 +14,36 @@
     <!-- Ground -->
     <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#00AA00"></a-plane>
 
-    <!-- Box -->
-    <a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+    <!-- Clickable Square Images Grid -->
+    <a-entity position="-3 1 -5" rotation="0 45 0">
+      <!-- Front Left Square -->
+      <a-entity position="-1 0 -1">
+        <a-link href="https://example.com/image_1_page">
+          <a-image src="link_to_image_1.jpg" width="2" height="2"></a-image>
+        </a-link>
+      </a-entity>
 
-    <!-- Sphere -->
-    <a-sphere position="-2 1 -5" radius="1.25" color="#FFC65D" shadow></a-sphere>
+      <!-- Front Right Square -->
+      <a-entity position="1 0 -1">
+        <a-link href="https://example.com/image_2_page">
+          <a-image src="link_to_image_2.jpg" width="2" height="2"></a-image>
+        </a-link>
+      </a-entity>
 
-    <!-- Cylinder -->
-    <a-cylinder position="2 1 -5" radius="0.5" height="2" color="#FFA500" shadow></a-cylinder>
+      <!-- Back Left Square -->
+      <a-entity position="-1 2 -1">
+        <a-link href="https://example.com/image_3_page">
+          <a-image src="link_to_image_3.jpg" width="2" height="2"></a-image>
+        </a-link>
+      </a-entity>
+
+      <!-- Back Right Square -->
+      <a-entity position="1 2 -1">
+        <a-link href="https://example.com/image_4_page">
+          <a-image src="link_to_image_4.jpg" width="2" height="2"></a-image>
+        </a-link>
+      </a-entity>
+    </a-entity>
 
     <!-- Light -->
     <a-light type="ambient" color="#445451"></a-light>
@@ -31,4 +53,4 @@
     <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
   </a-scene>
 </body>
-</html>
+</html>w
